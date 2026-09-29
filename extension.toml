@@ -11,4 +11,4 @@ snippets = ["snippets/webvtt.json"]
 
 [grammars.webvtt]
 repository = "https://github.com/mlinder/tree-sitter-webvtt"
-rev = "d834cee89f3caa85d32932a95ea4283de3905630"
+rev = "d80c2980c2a5b4a6f5820871068a880e89ae4a06"

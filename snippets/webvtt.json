@@ -20,8 +20,13 @@
   },
   "Note": {
     "prefix": "note",
-    "body": ["NOTE ${1:comment}", ""],
-    "description": "Comment block"
+    "body": ["NOTE $0", ""],
+    "description": "One-line comment"
+  },
+  "Note (multi-line)": {
+    "prefix": "note-block",
+    "body": ["NOTE", "$0", ""],
+    "description": "Comment on the following lines, up to the next blank line"
   },
   "Style": {
     "prefix": "style",
