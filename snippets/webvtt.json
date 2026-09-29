@@ -12,7 +12,7 @@
   "Cue with settings": {
     "prefix": "cue-settings",
     "body": [
-      "${1:00:00:00.000} --> ${2:00:00:00.000} align:${3|start,center,end,left,right|} position:${4:50%} line:${5:-1}",
+      "${1:00:00:00.000} --> ${2:00:00:00.000} align:${3|center,start,end,left,right|} position:${4:50%} line:${5:-1}",
       "${6:Text}",
       ""
     ],
