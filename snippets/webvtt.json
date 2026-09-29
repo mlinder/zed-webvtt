@@ -1,0 +1,55 @@
+{
+  "WebVTT header": {
+    "prefix": "webvtt",
+    "body": ["WEBVTT", "", "$0"],
+    "description": "WebVTT header, must be the first line"
+  },
+  "Cue": {
+    "prefix": "cue",
+    "body": ["${1:00:00:00.000} --> ${2:00:00:00.000}", "${3:Text}", ""],
+    "description": "Cue with start and end time"
+  },
+  "Cue with settings": {
+    "prefix": "cue-settings",
+    "body": [
+      "${1:00:00:00.000} --> ${2:00:00:00.000} align:${3|start,center,end,left,right|} position:${4:50%} line:${5:-1}",
+      "${6:Text}",
+      ""
+    ],
+    "description": "Cue with position and alignment settings"
+  },
+  "Note": {
+    "prefix": "note",
+    "body": ["NOTE ${1:comment}", ""],
+    "description": "Comment block"
+  },
+  "Style": {
+    "prefix": "style",
+    "body": ["STYLE", "::cue(.${1:class}) {", "  color: ${2:yellow};", "}", ""],
+    "description": "CSS style block for ::cue rules"
+  },
+  "Region": {
+    "prefix": "region",
+    "body": [
+      "REGION",
+      "id:${1:bottom}",
+      "width:${2:40%}",
+      "lines:${3:3}",
+      "regionanchor:${4:0%,100%}",
+      "viewportanchor:${5:10%,90%}",
+      "scroll:up",
+      ""
+    ],
+    "description": "Region definition block"
+  },
+  "Voice": {
+    "prefix": "voice",
+    "body": ["<v ${1:Speaker}>${2:text}</v>"],
+    "description": "Voice span naming the speaker"
+  },
+  "Class": {
+    "prefix": "class",
+    "body": ["<c.${1:class}>${2:text}</c>"],
+    "description": "Class span, styled by STYLE rules"
+  }
+}

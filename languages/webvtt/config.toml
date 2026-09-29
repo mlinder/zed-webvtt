@@ -1,0 +1,10 @@
+name = "WebVTT"
+grammar = "webvtt"
+# HLS subtitle segments often use .webvtt
+path_suffixes = ["vtt", "webvtt"]
+# Also recognize subtitles saved without either extension
+first_line_pattern = '^\x{FEFF}?WEBVTT'
+
+# Double-clicking selects whole setting names (regionanchor) and class
+# names (bg_blue) and whole timestamps (00:00:01.000).
+word_characters = ["-", ".", ":"]

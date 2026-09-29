@@ -1,0 +1,14 @@
+id = "webvtt"
+name = "WebVTT"
+version = "0.1.0"
+schema_version = 1
+authors = ["Marcus Linder <mlinder@gmail.com>"]
+description = "WebVTT subtitles and captions (.vtt)"
+repository = "https://github.com/mlinder/zed-webvtt"
+
+languages = ["languages/webvtt"]
+snippets = ["snippets/webvtt.json"]
+
+[grammars.webvtt]
+repository = "https://github.com/mlinder/tree-sitter-webvtt"
+rev = "aa06e5af265ac00dcc24a80562909575e210fe73"
