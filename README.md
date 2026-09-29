@@ -19,8 +19,8 @@
 - **Outline** (`cmd-shift-o` and the outline panel): one entry per cue, with
   its start time and full text without tags, so you can search the dialogue;
   `STYLE` with its `::cue` rules, and regions by id
-- **Snippets**: `webvtt`, `cue`, `cue-settings`, `note`, `style`, `region`,
-  `voice` and `class`
+- **Snippets**: `webvtt`, `cue`, `cue-settings`, `note`, `note-block`,
+  `style`, `region`, `voice` and `class`
 
 Based on [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 (W3C Candidate Recommendation Draft, 20 May 2026) and, for HLS subtitle
