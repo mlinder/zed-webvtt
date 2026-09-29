@@ -16,7 +16,8 @@
   `<cc>` catch your eye
 - **CSS in `STYLE` blocks**, highlighted by Zed's CSS support
 - **Outline** (`cmd-shift-o` and the outline panel): one entry per cue, with
-  its start time and first words, and regions by id
+  its start time and full text without tags, so you can search the dialogue;
+  `STYLE` with its `::cue` rules, and regions by id
 - **Snippets**: `webvtt`, `cue`, `cue-settings`, `note`, `style`, `region`,
   `voice` and `class`
 
