@@ -4,6 +4,10 @@
 [Zed](https://zed.dev): subtitles, captions, chapters and metadata tracks in
 `.vtt` and `.webvtt` files, including HLS subtitle segments.
 
+![A WebVTT file in Zed, with the current cue's timing and text line shown in the breadcrumbs](assets/screenshot.png)
+
+<sub>Shown with the Zedokai Darker theme.</sub>
+
 ## Features
 
 - **Syntax highlighting** for cues: timestamps, cue settings, identifiers,
@@ -16,9 +20,9 @@
 - **Built-in color classes** (`yellow`, `bg_blue`, …) are highlighted apart
   from your own classes, which need a `STYLE` rule
 - **CSS in `STYLE` blocks**, highlighted by Zed's CSS support
-- **Outline** (`cmd-shift-o` and the outline panel): one entry per cue, with
-  its start time and full text without tags, so you can search the dialogue;
-  `STYLE` with its `::cue` rules, and regions by id
+- **Outline** (`cmd-shift-o`, the outline panel and breadcrumbs): each cue by
+  its start and end time, with its lines of text nested below, without tags, so you
+  can search the dialogue; `STYLE` with its `::cue` rules, and regions by id
 - **Snippets**: `webvtt`, `cue`, `cue-settings`, `note`, `note-block`,
   `style`, `region`, `voice` and `class`
 
