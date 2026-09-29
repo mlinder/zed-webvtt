@@ -1,6 +1,6 @@
 id = "webvtt"
 name = "WebVTT"
-version = "0.1.0"
+version = "1.0.0"
 schema_version = 1
 authors = ["Marcus Linder <mlinder@gmail.com>"]
 description = "WebVTT subtitles and captions"
@@ -11,4 +11,4 @@ snippets = ["snippets/webvtt.json"]
 
 [grammars.webvtt]
 repository = "https://github.com/mlinder/tree-sitter-webvtt"
-rev = "d80c2980c2a5b4a6f5820871068a880e89ae4a06"
+rev = "2afbfa72898392dbbc9d50bc008aea2b8ff778ee"
