@@ -18,4 +18,4 @@ language_ids = { "WebVTT" = "webvtt" }
 
 [grammars.webvtt]
 repository = "https://github.com/mlinder/tree-sitter-webvtt"
-rev = "b24b9b6deeb4103fba4aff8df0c3b69f175a99fc"
+rev = "bf318bc78871d7259627729da3111ebeca5c8161"
