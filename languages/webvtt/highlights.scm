@@ -20,6 +20,7 @@
 ; --- Timing and settings ---
 
 (timestamp) @number
+(timestamp [":" "."] @punctuation.delimiter)
 "-->" @operator
 
 ((cue_timing (setting name: (setting_name) @property))
@@ -131,8 +132,20 @@
    "bg_blue" "bg_black"))
 (start_tag "." @punctuation.delimiter)
 
-; Speaker (<v Anna>) and language (<lang sv>)
-(start_tag annotation: (annotation) @string)
+; Speaker (<v Anna>) and language (<lang sv>). Other tags don't take an
+; annotation, so it stays plain there.
+((start_tag
+   name: (tag_name) @_name
+   annotation: (annotation) @string)
+ (#eq? @_name "v"))
+
+((start_tag
+   name: (tag_name) @_name
+   annotation: (annotation) @string.special)
+ (#eq? @_name "lang"))
+
+; A new speaker's line: –Hej.
+(dialogue_dash) @punctuation.list_marker
 
 (start_tag ["<" ">"] @punctuation.bracket)
 (end_tag ["</" ">"] @punctuation.bracket)

@@ -14,7 +14,14 @@
     "-->" @name
     end: (timestamp) @name)) @item
 
+; A dialogue dash stays in the label (–Hej.). Two patterns, as an optional
+; dash would match such a line twice.
 (cue_text
+  dash: (dialogue_dash) @name
+  [(text) @name (entity) @name (start_tag) (end_tag) (timestamp_tag)]*) @item
+
+(cue_text
+  !dash
   [(text) @name (entity) @name (start_tag) (end_tag) (timestamp_tag)]*) @item
 
 ; STYLE, with the CSS outline's ::cue rules nested below

@@ -9,6 +9,13 @@ repository = "https://github.com/mlinder/zed-webvtt"
 languages = ["languages/webvtt"]
 snippets = ["snippets/webvtt.json"]
 
+# media-language-server from npm: cue durations, and diagnostics after the
+# WebVTT specification
+[language_servers.webvtt-language-server]
+name = "WebVTT Language Server"
+languages = ["WebVTT"]
+language_ids = { "WebVTT" = "webvtt" }
+
 [grammars.webvtt]
 repository = "https://github.com/mlinder/tree-sitter-webvtt"
-rev = "2afbfa72898392dbbc9d50bc008aea2b8ff778ee"
+rev = "b24b9b6deeb4103fba4aff8df0c3b69f175a99fc"
